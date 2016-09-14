@@ -1,0 +1,10 @@
+pmsbutton ref links:
+twitter api for list members: https://dev.twitter.com/rest/reference/get/lists/members
+tweepy api (has getting list members): http://docs.tweepy.org/en/v3.5.0/api.html
+
+twitter verified list of congress members: https://twitter.com/verified/lists/us-congress/members    (v v incomplete)
+
+goal people to have:
+governors
+senate
+house of representatives
