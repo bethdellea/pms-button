@@ -31,10 +31,16 @@ def main():
             #to keep the printout concise
     '''
     #print(api.get_user("meataphor"))
-    print(api.user_timeline("meataphor"))
-    # if blocked:
-    ''' raise TweepError(error_msg, resp, api_code=api_error_code)
-tweepy.error.TweepError: [{'code': 136, 'message': "You have been blocked from viewing this user's profile."}]   '''
+    try:
+        print(api.user_timeline("meataphor"))
+    except tweepy.error.TweepError as e:
+        if e.args[0][0]['code'] == 136:
+            print("block caught! ")
+        else:
+            print("some other error I guess")
+        # if blocked:
+        ''' raise TweepError(error_msg, resp, api_code=api_error_code)
+    tweepy.error.TweepError: [{'code': 136, 'message': "You have been blocked from viewing this user's profile."}]   '''
 
 main()
 
