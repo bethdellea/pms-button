@@ -28,11 +28,11 @@ def main():
                  "This is a randomly generated tweet!",
                  "We're learning about the twitter API!"]
 
-    atlist = ["@weareicwc","@bethdellea", "@meataphor"]
+    #atlist = ["@weareicwc","@bethdellea", "@meataphor"]
 
     contentNum = random.randint(0, len(tweetlist)-1)
-    atNum = random.randint(0, len(atlist)-1)
-    tweet = atlist[atNum] + " " + tweetlist[contentNum]  #random text plus random directed user, for funsies
+    #atNum = random.randint(0, len(atlist)-1)
+    tweet = "@meatahpor did this break things?"  #atlist[atNum] + " " + tweetlist[contentNum]  #random text plus random directed user, for funsies
     api.update_status(tweet)
 
 main()
