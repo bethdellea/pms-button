@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PMS Button</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        
+    <link rel="stylesheet" href="style/base.css">
+    <script src="script/jquery-2.1.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <!-- responsive nav -->
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="hometest.html">The Button</a>
+    </div>
+
+    <!-- Collect the nav links -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#" data-toggle="modal" data-target="#signModal" >Sign In/Out <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Settings</a></li>
+          <li><a href="">About This Project</a></li>
+          <li><a href="">About the Makers</a></li>
+          <li><a href="">The Shit List</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    
+    
+    <!-- big ol' button -->
+    
+<button type="button" id="pms_Button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tweetModal">
+  It's Pain Time
+</button>
+
+    
+    
+<!-- Button trigger modal -->
+<div class="modal fade" id="tweetModal" tabindex="-1" role="dialog" aria-labelledby="tweetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="tweetModalLabel">Pick the Ignorant</h4>
+      </div>
+      <div class="modal-body">
+        (that list goes here prolly definitely)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send Tweet!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of tweet modal -->
+    
+    <!-- login/signup modal -->
+    <div class="modal fade" id="signModal" tabindex="-1" role="dialog" aria-labelledby="signModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="signModalLabel">I should be a variable!</h4>
+      </div>
+      <div class="modal-body">
+        if logged in: bottom button signs out
+          else:
+          tabs: log in or sign up
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Also a variable!</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of login/signup modal -->
+    
+    
+    
+</body>
+
+</html>
