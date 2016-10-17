@@ -21,16 +21,18 @@ def main():
 
     #get a list of the representatives on the twitter verified us-congress list
     #it's our starting point, at least
-    '''allRepList = tweepy.Cursor(api.list_members, "verified", "us-congress").items()
+    allRepList = tweepy.Cursor(api.list_members, "verified", "us-congress").items()
     printedCount = 0
     for user in allRepList:
         if printedCount < 15:
-            print (user.screen_name)
+            print (user.screen_name, "\t", user.name)
             print (user.description)
+            print(user.profile_image_url)
             printedCount += 1
             #to keep the printout concise
-    '''
+    
     #print(api.get_user("meataphor"))
+    '''
     try:
         print(api.user_timeline("meataphor"))
     except tweepy.error.TweepError as e:
@@ -38,9 +40,9 @@ def main():
             print("block caught! ")
         else:
             print("some other error I guess")
-        # if blocked:
-        ''' raise TweepError(error_msg, resp, api_code=api_error_code)
-    tweepy.error.TweepError: [{'code': 136, 'message': "You have been blocked from viewing this user's profile."}]   '''
+        # if blocked:  '''
+    #   ''' raise TweepError(error_msg, resp, api_code=api_error_code)
+    #tweepy.error.TweepError: [{'code': 136, 'message': "You have been blocked from viewing this user's profile."}]   '''
 
 main()
 

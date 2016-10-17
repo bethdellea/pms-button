@@ -15,3 +15,33 @@
 .navPad{
     padding-top: 2.5em;
 }
+
+
+/* -------------------------------------
+            fake embedded profile header styling
+
+----------------------------------------*/
+.twPic{
+    border: 1px solid lightBlue;
+    border-radius: 3px;
+    float: left;
+}
+.twitterName{
+    font-size: 1.2em;
+    padding-right: .5em;
+}
+.handleName{
+    font-size: .9em;
+    color: darkslategray;
+}
+.handleName a{
+    color: darkslategray;
+}
+.profDesc{
+    font-style: italic;
+}
+.profileSect{
+    border: 1px solid lightBlue;
+    border-radius: 5px;
+    margin-bottom: .3em;
+}
