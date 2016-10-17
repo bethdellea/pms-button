@@ -16,6 +16,29 @@ function resolveFullHeight() {
 
 resolveFullHeight();
 
+
+var sections = $('container')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+ 
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+ 
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+ 
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+ 
+      $(this).addClass('active');
+      nav.find('a[href="about.html#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
+
+
 $(window).resize(function () {
     resolveFullHeight();
 });

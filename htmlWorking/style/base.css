@@ -1,3 +1,14 @@
+/* coolors scheme:
+    #3B0D11
+    #6A3937
+    #706563
+    #748386
+    #9DC7C8
+
+w3schools picker for variations:
+http://www.w3schools.com/colors/colors_picker.asp
+*/
+
 #pms_Button{
     background-color: red;
     /* gotta fight that height at some point */
@@ -16,46 +27,77 @@
     padding-top: 2.5em;
 }
 
+.about-img{
+    
+    width: 50%;
+    min-width: 90px;
+    height: auto;
+}
 
+
+#dellea{
+    background-color: #a48386;
+    text-align: left;
+}
+
+#sadwin{
+    background-color: #9DC7C8;
+    text-align: right;
+}
+#makers a{
+    color: #3b0d11;
+    text-shadow: 1px 1px #9b5e51;
+}
 /* -------------------------------------
             fake embedded profile header styling
 
 ----------------------------------------*/
 .twPic{
-    border: 1px solid lightBlue;
+    border: 1px solid #3b0d11;
     border-radius: 3px;
     float: left;
     margin-right: .5em;
-    margin-top: .3em;
     margin-bottom: .3em;
 }
 .twitterName{
     font-size: 1.2em;
     padding-right: .5em;
+    color: antiquewhite;
 }
 .handleName{
     font-size: .9em;
-    color: darkslategray;
 }
 .handleName a{
-    color: darkslategray;
+    color: #9dc7c8;
 }
 .profDesc{
     font-style: italic;
+    text-shadow: .5px 0.5px #999;
+    color: #333;
+
 }
 .profileSect{
     border-radius: 2px;
+    padding-top: .3em;
     
 }
 
 .tweetRow:nth-child(even) .profileSect{
-    background-color: deepskyblue;
+    background-color: #938785;
 }
 .tweetRow:nth-child(odd) .profileSect{
-    background-color: darkgray;
+    background-color: #929ea0;
 }
 
 /*  ----------------------------
+.tweetRow:nth-child(even) .profileSect{
+    background-color: #706563;
+}
+.tweetRow:nth-child(odd) .profileSect{
+    background-color: #748386;
+}
+
+
                 for tweet @ selection modal!
 
     ----------------------------    */
