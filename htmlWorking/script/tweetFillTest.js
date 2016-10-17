@@ -5,7 +5,7 @@ function fillInTweets(){
     var profList = [marshaList, ASlist];
     var tw_profiles = "";
     for (var i = 0; i < 2; i++){
-        tw_profiles += "<div class='row'>";
+        tw_profiles += "<div class='row tweetRow'>";
         tw_profiles += "<div class='col-xs-10 col-xs-offset-1 profileSect'>";
         tw_profiles += "<img class='twPic' src='"+profList[i][3] + "'>";
         tw_profiles += "<a href='twitter.com/" + profList[i][0] + "' target='_blank' class='twitterName'>" + profList[i][1] + "</a>";

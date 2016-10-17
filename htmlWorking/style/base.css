@@ -25,6 +25,9 @@
     border: 1px solid lightBlue;
     border-radius: 3px;
     float: left;
+    margin-right: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
 }
 .twitterName{
     font-size: 1.2em;
@@ -41,7 +44,21 @@
     font-style: italic;
 }
 .profileSect{
-    border: 1px solid lightBlue;
-    border-radius: 5px;
-    margin-bottom: .3em;
+    border-radius: 2px;
+    
+}
+
+.tweetRow:nth-child(even) .profileSect{
+    background-color: deepskyblue;
+}
+.tweetRow:nth-child(odd) .profileSect{
+    background-color: darkgray;
+}
+
+/*  ----------------------------
+                for tweet @ selection modal!
+
+    ----------------------------    */
+.tweetOption: hover{
+    cursor: pointer;
 }
