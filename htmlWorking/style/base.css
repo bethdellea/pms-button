@@ -4,3 +4,7 @@
     min-height: 50%;
     min-width: 50%;
 }
+
+.center-text{
+    text-align: center;
+}
