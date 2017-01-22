@@ -39,7 +39,7 @@ class User(db.Model):
     district_id = db.Column(db.Integer, db.ForeignKey('district.id'))
     district = db.relationship('district', foreign_keys=[district_id])
 
-    def __init__(self, username, pass_hash, zip_code, email):
+    def __init__(self, username, pass_hash, email, zip_code=None):
         self.username = username
         self.pass_hash = pass_hash
         self.zip_code = zip_code
