@@ -34,10 +34,17 @@ http://www.w3schools.com/colors/colors_picker.asp
     height: auto;
 }
 
+#dellea.about-img, #dellea h2, #dellea h6{
+    float: left;
+}
 
 #dellea{
     background-color: #a48386;
     text-align: left;
+}
+
+#sadwin.about-img, #sadwin h2, #sadwin h6{
+    float: right;
 }
 
 #sadwin{
