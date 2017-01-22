@@ -27,8 +27,13 @@ http://www.w3schools.com/colors/colors_picker.asp
     padding-top: 2.5em;
 }
 
+.about-box{
+    padding: 3px;
+    min-height: 99px;
+}
+
 .about-img{
-    
+    margin-top: 5px;
     width: 50%;
     min-width: 90px;
     height: auto;
@@ -39,7 +44,9 @@ http://www.w3schools.com/colors/colors_picker.asp
 }
 
 #dellea{
-    background-color: #a48386;
+    background-color: rgba(164,131,134, .4);
+    border: 1px  solid;
+    border-color: #a48386;
     text-align: left;
 }
 
@@ -48,7 +55,9 @@ http://www.w3schools.com/colors/colors_picker.asp
 }
 
 #sadwin{
-    background-color: #9DC7C8;
+    background-color:rgba(157,199,200, .4);
+    border: 1px solid;
+    border-color: #9dc7c8;
     text-align: right;
 }
 #makers a{
